@@ -1,0 +1,199 @@
+.body {
+  background-color: hsl(201, 11%, 66%);
+}
+
+.image {
+  text-align: center;
+}
+
+.image img {
+  width: 100px;
+  padding: 20px 0px 0px 0px;
+}
+
+.heading {
+  text-align: center;
+}
+
+.heading p {
+  padding: 0px 250px;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  color: white;
+  margin: 0px 0px 20px 0px;
+}
+
+.button1 {
+  background-color: hsl(171, 66%, 44%);
+  border-color: hsl(171, 66%, 44%);
+}
+
+.button2 {
+  background-color: hsl(233, 100%, 69%);
+  border-color: hsl(233, 100%, 69%);
+}
+
+.src img {
+  width: 100%;
+  padding: 20px 0px;
+}
+
+.paragraph {
+  display: flex;
+  flex-direction: row;
+}
+
+.text {
+  padding: 20px 0px 0px 20px;
+}
+
+.text p {
+  padding: 0px 20px 0px 0px;
+}
+
+.text h1{
+  font-size:20px;
+}
+
+.access {
+  text-align:center;
+}
+
+.access img{
+  width:50%;
+}
+
+.column{
+  width:33.3%;
+  text-align:center;
+}
+
+.column p{
+  padding:0px 10px;
+}
+
+.display{
+  display:flex;
+}
+
+.section{
+  display:flex;
+  justify-content:space-evenly;
+}
+
+.upper img{
+  width:50%;
+}
+
+.upper{
+  padding:50px 0px;
+  width:15%;
+}
+
+.last{
+  text-align:center;
+}
+
+footer{
+  margin:20px 0px 0px 0px;
+  padding:30px 0px;
+  background-color:rgb(204, 200, 200);
+  display:flex;
+  justify-content:space-around;
+}
+
+footer img{
+  padding-top:10px;
+  width:70px;
+}
+
+footer .icons img{
+  padding:30px 4px 0px 4px;
+  width:40px;
+}
+
+  
+  /* mediaqueries */
+  @media (max-width: 790px) {
+.heading {
+  padding: 0px 50px;
+}
+
+.heading p {
+  padding: 0px 20px;
+}
+
+.src img {
+  width: 50%;
+  text-align: center;
+}
+
+.paragraph {
+  text-align: center;
+  flex-direction: column;
+}
+
+.text {
+  text-align: center;
+}
+
+.access{
+  padding:0px 50px;
+}
+
+.access img{
+    width:100%;
+}
+
+.column{
+  width:100%;
+  text-align:center;
+}
+
+.column p{
+  padding:0px 50px;
+}
+
+.display{
+  flex-direction: column;
+}
+
+.section{
+  flex-direction:column;
+  justify-content: center;
+  align-items:center;
+}
+
+.upper img{
+  width:150px;
+}
+
+.upper{
+  padding:50px 0px;
+  width:100%;
+  text-align:center;
+}
+
+.last{
+  padding:0px 50px;
+}
+
+footer{
+  margin:0px;
+  padding:0px;
+  flex-direction:column;
+  align-items:center;
+}
+
+footer img{
+  padding-top:25px;
+}
+
+footer .icons img{
+  padding:20px 4px 20px 4px;
+}
+}

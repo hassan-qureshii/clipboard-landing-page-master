@@ -6,8 +6,7 @@
   text-align: center;
 }
 
-.image img {
-  width: 100px;
+.image svg {
   padding: 20px 0px 0px 0px;
 }
 
@@ -47,16 +46,15 @@ button {
   flex-direction: row;
 }
 
-.text {
-  padding: 20px 0px 0px 20px;
-}
-
-.text p {
-  padding: 0px 20px 0px 0px;
+.text1 {
+  padding:0px 0px 0px 20px;
+  display:flex;
+  justify-content:center;
+  align-items: center;
 }
 
 .text h1{
-  font-size:20px;
+  font-size:30px;
 }
 
 .access {
@@ -86,7 +84,9 @@ button {
 }
 
 .upper img{
-  width:50%;
+  width:100%;
+  object-fit:contain;
+  aspect-ratio:3/3;
 }
 
 .upper{
@@ -95,6 +95,7 @@ button {
 }
 
 .last{
+  margin-bottom:10px;
   text-align:center;
 }
 
@@ -106,14 +107,12 @@ footer{
   justify-content:space-around;
 }
 
-footer img{
+footer .card svg{
   padding-top:10px;
-  width:70px;
 }
 
-footer .icons img{
-  padding:30px 4px 0px 4px;
-  width:40px;
+footer .icons svg{
+  padding:30px 2px;
 }
 
   
@@ -173,13 +172,13 @@ footer .icons img{
 }
 
 .upper{
-  padding:50px 0px;
+  padding:0px 0px;
   width:100%;
   text-align:center;
 }
 
 .last{
-  padding:0px 50px;
+  padding:10px 50px;
 }
 
 footer{

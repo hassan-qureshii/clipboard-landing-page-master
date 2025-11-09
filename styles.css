@@ -1,17 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
 .body {
-  background-color: hsl(201, 11%, 66%);
+  background-color:#f3f8fc;
+  font-family: 'Inter', sans-serif; /* Added Google Font for catchiness */
 }
 
 .image {
   text-align: center;
+  animation: fadeIn 1s ease-in-out; /* Smooth fade-in on load */
 }
 
 .image svg {
   padding: 20px 0px 0px 0px;
+  transition: transform 0.3s ease; /* Smooth hover transition */
+}
+
+.image svg:hover {
+  transform: rotate(5deg); /* Subtle rotation for interactivity */
 }
 
 .heading {
   text-align: center;
+  animation: fadeIn 1.2s ease-in-out; /* Delayed fade-in for sequence */
 }
 
 .heading p {
@@ -24,6 +34,7 @@ button {
   cursor: pointer;
   color: white;
   margin: 0px 0px 20px 0px;
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth hover transitions */
 }
 
 .button1 {
@@ -31,168 +42,222 @@ button {
   border-color: hsl(171, 66%, 44%);
 }
 
+
 .button2 {
-  background-color: hsl(233, 100%, 69%);
-  border-color: hsl(233, 100%, 69%);
+  background-color:#083b75;
+  border-color:#083b75;
 }
+
+
 
 .src img {
   width: 100%;
   padding: 20px 0px;
+  transition: transform 0.3s ease; /* Smooth hover transition */
+  animation: fadeIn 1.5s ease-in-out; /* Fade-in animation */
+}
+
+.src img:hover {
+  transform: scale(1.05); /* Subtle zoom for catchiness */
 }
 
 .paragraph {
   display: flex;
   flex-direction: row;
+  animation: fadeIn 1.8s ease-in-out; /* Fade-in for section */
 }
 
 .text1 {
-  padding:0px 0px 0px 20px;
-  display:flex;
-  justify-content:center;
+  padding: 0px 0px 0px 20px;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
-.text h1{
-  font-size:30px;
+.text h1 {
+  font-size: 30px;
 }
 
 .access {
-  text-align:center;
+  text-align: center;
+  animation: fadeIn 2s ease-in-out; /* Fade-in animation */
 }
 
-.access img{
-  width:50%;
-}
-
-.column{
-  width:33.3%;
-  text-align:center;
-}
-
-.column p{
-  padding:0px 10px;
-}
-
-.display{
-  display:flex;
-}
-
-.section{
-  display:flex;
-  justify-content:space-evenly;
-}
-
-.upper img{
-  width:100%;
-  object-fit:contain;
-  aspect-ratio:3/3;
-}
-
-.upper{
-  padding:50px 0px;
-  width:15%;
-}
-
-.last{
-  margin-bottom:10px;
-  text-align:center;
-}
-
-footer{
-  margin:20px 0px 0px 0px;
-  padding:30px 0px;
-  background-color:rgb(204, 200, 200);
-  display:flex;
-  justify-content:space-around;
-}
-
-footer .card svg{
-  padding-top:10px;
-}
-
-footer .icons svg{
-  padding:30px 2px;
-}
-
-  
-  /* mediaqueries */
-  @media (max-width: 790px) {
-.heading {
-  padding: 0px 50px;
-}
-
-.heading p {
-  padding: 0px 20px;
-}
-
-.src img {
+.access img {
   width: 50%;
+  transition: transform 0.3s ease; /* Smooth hover transition */
+}
+
+.access img:hover {
+  transform: scale(1.05); /* Subtle zoom for interactivity */
+}
+
+.column {
+  width: 33.3%;
   text-align: center;
+  animation: fadeIn 2.2s ease-in-out; /* Fade-in for columns */
 }
 
-.paragraph {
+.column p {
+  padding: 0px 10px;
+}
+
+.column svg {
+  transition: transform 0.3s ease; /* Smooth hover transition */
+}
+
+.column svg:hover {
+  transform: rotate(10deg); /* Playful rotation for interactivity */
+}
+
+.display {
+  display: flex;
+  animation: fadeIn 2.4s ease-in-out; /* Fade-in for display section */
+}
+
+.section {
+  display: flex;
+  justify-content: space-evenly;
+  animation: fadeIn 2.6s ease-in-out; /* Fade-in for logos */
+}
+
+.upper img {
+  width: 100%;
+  object-fit: contain;
+  aspect-ratio: 3/3;
+  transition: transform 0.3s ease; /* Smooth hover transition */
+}
+
+.upper img:hover {
+  transform: scale(1.1); /* Subtle zoom for catchiness */
+}
+
+.upper {
+  padding: 50px 0px;
+  width: 15%;
+}
+
+.last {
+  margin-bottom: 10px;
   text-align: center;
-  flex-direction: column;
+  animation: fadeIn 2.8s ease-in-out; /* Fade-in for last section */
 }
 
-.text {
-  text-align: center;
+footer {
+  margin: 20px 0px 0px 0px;
+  padding: 30px 0px;
+  background-color: rgba(173, 170, 170, 0.591);
+  display: flex;
+  justify-content: space-around;
+  animation: fadeIn 3s ease-in-out; /* Fade-in for footer */
 }
 
-.access{
-  padding:0px 50px;
+footer .card svg {
+  padding-top: 10px;
+  transition: transform 0.3s ease; /* Smooth hover transition */
 }
 
-.access img{
-    width:100%;
+footer .card svg:hover {
+  transform: rotate(-5deg); /* Subtle rotation for interactivity */
 }
 
-.column{
-  width:100%;
-  text-align:center;
+footer .icons svg {
+  padding: 30px 2px;
+  transition: transform 0.3s ease; /* Smooth hover transition */
 }
 
-.column p{
-  padding:0px 50px;
+footer .icons svg:hover {
+  transform: scale(1.1); /* Slight scale for icons */
 }
 
-.display{
-  flex-direction: column;
+/* Keyframe animations for smooth fade-ins */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.section{
-  flex-direction:column;
-  justify-content: center;
-  align-items:center;
-}
+/* Media queries remain unchanged */
+@media (max-width: 790px) {
+  .heading {
+    padding: 0px 50px;
+  }
 
-.upper img{
-  width:150px;
-}
+  .heading p {
+    padding: 0px 20px;
+  }
 
-.upper{
-  padding:0px 0px;
-  width:100%;
-  text-align:center;
-}
+  .src img {
+    width: 50%;
+    text-align: center;
+  }
 
-.last{
-  padding:10px 50px;
-}
+  .paragraph {
+    text-align: center;
+    flex-direction: column;
+  }
 
-footer{
-  margin:0px;
-  padding:0px;
-  flex-direction:column;
-  align-items:center;
-}
+  .text {
+    text-align: center;
+  }
 
-footer img{
-  padding-top:25px;
-}
+  .access {
+    padding: 0px 50px;
+  }
 
-footer .icons img{
-  padding:20px 4px 20px 4px;
-}
-}
+  .access img {
+    width: 100%;
+  }
+
+  .column {
+    width: 100%;
+    text-align: center;
+  }
+
+  .column p {
+    padding: 0px 50px;
+  }
+
+  .display {
+    flex-direction: column;
+  }
+
+  .section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .upper img {
+    width: 150px;
+  }
+
+  .upper {
+    padding: 0px 0px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .last {
+    padding: 10px 50px;
+  }
+
+  footer {
+    margin: 0px;
+    padding: 0px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer img {
+    padding-top: 25px;
+  }
+
+  footer .icons img {
+    padding: 20px 4px 20px 4px;
+  }

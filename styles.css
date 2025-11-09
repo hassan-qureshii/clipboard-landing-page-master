@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
 .body {
-  background-color:#f3f8fc;
+  background-color: #f3f8fc;
   font-family: 'Inter', sans-serif; /* Added Google Font for catchiness */
 }
 
@@ -42,13 +42,10 @@ button {
   border-color: hsl(171, 66%, 44%);
 }
 
-
 .button2 {
-  background-color:#083b75;
-  border-color:#083b75;
+  background-color: #083b75;
+  border-color: #083b75;
 }
-
-
 
 .src img {
   width: 100%;
@@ -161,13 +158,24 @@ footer .card svg:hover {
   transform: rotate(-5deg); /* Subtle rotation for interactivity */
 }
 
-footer .icons svg {
-  padding: 30px 2px;
-  transition: transform 0.3s ease; /* Smooth hover transition */
+/* ✅ Font Awesome Social Icon Styles */
+.icons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
 
-footer .icons svg:hover {
-  transform: scale(1.1); /* Slight scale for icons */
+.social-icon i {
+  font-size: 22px;
+  color: #4C545C;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover i {
+  color: #26BBA4;
+  transform: scale(1.2);
 }
 
 /* Keyframe animations for smooth fade-ins */
@@ -261,3 +269,4 @@ footer .icons svg:hover {
   footer .icons img {
     padding: 20px 4px 20px 4px;
   }
+}

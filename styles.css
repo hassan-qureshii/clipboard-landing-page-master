@@ -2,26 +2,26 @@
 
 .body {
   background-color: #f3f8fc;
-  font-family: 'Inter', sans-serif; /* Added Google Font for catchiness */
+  font-family: 'Inter', sans-serif;
 }
 
 .image {
   text-align: center;
-  animation: fadeIn 1s ease-in-out; /* Smooth fade-in on load */
+  animation: fadeIn 1s ease-in-out;
 }
 
 .image svg {
   padding: 20px 0px 0px 0px;
-  transition: transform 0.3s ease; /* Smooth hover transition */
+  transition: transform 0.3s ease;
 }
 
 .image svg:hover {
-  transform: rotate(5deg); /* Subtle rotation for interactivity */
+  transform: rotate(5deg);
 }
 
 .heading {
   text-align: center;
-  animation: fadeIn 1.2s ease-in-out; /* Delayed fade-in for sequence */
+  animation: fadeIn 1.2s ease-in-out;
 }
 
 .heading p {
@@ -34,7 +34,7 @@ button {
   cursor: pointer;
   color: white;
   margin: 0px 0px 20px 0px;
-  transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth hover transitions */
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .button1 {
@@ -50,18 +50,18 @@ button {
 .src img {
   width: 100%;
   padding: 20px 0px;
-  transition: transform 0.3s ease; /* Smooth hover transition */
-  animation: fadeIn 1.5s ease-in-out; /* Fade-in animation */
+  transition: transform 0.3s ease;
+  animation: fadeIn 1.5s ease-in-out;
 }
 
 .src img:hover {
-  transform: scale(1.05); /* Subtle zoom for catchiness */
+  transform: scale(1.05);
 }
 
 .paragraph {
   display: flex;
   flex-direction: row;
-  animation: fadeIn 1.8s ease-in-out; /* Fade-in for section */
+  animation: fadeIn 1.8s ease-in-out;
 }
 
 .text1 {
@@ -77,22 +77,22 @@ button {
 
 .access {
   text-align: center;
-  animation: fadeIn 2s ease-in-out; /* Fade-in animation */
+  animation: fadeIn 2s ease-in-out;
 }
 
 .access img {
   width: 50%;
-  transition: transform 0.3s ease; /* Smooth hover transition */
+  transition: transform 0.3s ease;
 }
 
 .access img:hover {
-  transform: scale(1.05); /* Subtle zoom for interactivity */
+  transform: scale(1.05);
 }
 
 .column {
   width: 33.3%;
   text-align: center;
-  animation: fadeIn 2.2s ease-in-out; /* Fade-in for columns */
+  animation: fadeIn 2.2s ease-in-out;
 }
 
 .column p {
@@ -100,33 +100,33 @@ button {
 }
 
 .column svg {
-  transition: transform 0.3s ease; /* Smooth hover transition */
+  transition: transform 0.3s ease; 
 }
 
 .column svg:hover {
-  transform: rotate(10deg); /* Playful rotation for interactivity */
+  transform: rotate(10deg);
 }
 
 .display {
   display: flex;
-  animation: fadeIn 2.4s ease-in-out; /* Fade-in for display section */
+  animation: fadeIn 2.4s ease-in-out;
 }
 
 .section {
   display: flex;
   justify-content: space-evenly;
-  animation: fadeIn 2.6s ease-in-out; /* Fade-in for logos */
+  animation: fadeIn 2.6s ease-in-out;
 }
 
 .upper img {
   width: 100%;
   object-fit: contain;
   aspect-ratio: 3/3;
-  transition: transform 0.3s ease; /* Smooth hover transition */
+  transition: transform 0.3s ease;
 }
 
 .upper img:hover {
-  transform: scale(1.1); /* Subtle zoom for catchiness */
+  transform: scale(1.1);
 }
 
 .upper {
@@ -137,7 +137,7 @@ button {
 .last {
   margin-bottom: 10px;
   text-align: center;
-  animation: fadeIn 2.8s ease-in-out; /* Fade-in for last section */
+  animation: fadeIn 2.8s ease-in-out;
 }
 
 footer {
@@ -146,19 +146,18 @@ footer {
   background-color: rgba(173, 170, 170, 0.591);
   display: flex;
   justify-content: space-around;
-  animation: fadeIn 3s ease-in-out; /* Fade-in for footer */
+  animation: fadeIn 3s ease-in-out;
 }
 
 footer .card svg {
   padding-top: 10px;
-  transition: transform 0.3s ease; /* Smooth hover transition */
+  transition: transform 0.3s ease;
 }
 
 footer .card svg:hover {
-  transform: rotate(-5deg); /* Subtle rotation for interactivity */
+  transform: rotate(-5deg);
 }
 
-/* ✅ Font Awesome Social Icon Styles */
 .icons {
   display: flex;
   gap: 20px;
@@ -178,7 +177,6 @@ footer .card svg:hover {
   transform: scale(1.2);
 }
 
-/* Keyframe animations for smooth fade-ins */
 @keyframes fadeIn {
   from {
     opacity: 0;
